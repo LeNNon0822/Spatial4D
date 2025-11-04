@@ -1276,7 +1276,7 @@ const scrollTo = (id) => {
   display: flex;
   position: relative;
   height: 100%;
-  width: 10vw;
+  width: 7.5vw;
   box-sizing: border-box;
 }
 .line {
@@ -1287,8 +1287,8 @@ const scrollTo = (id) => {
 }
 .horizontolLine {
   display: flex;
-  height: 83.5%;
-  width: 2.5px;
+  height: 83.75%;
+  width: 2px;
   justify-self: center;
   align-self: center;
   box-sizing: border-box;
@@ -1326,7 +1326,7 @@ const scrollTo = (id) => {
 
 .taskItemContainer {
   display: grid;
-  grid-template-columns: 50px 1fr 100px 5fr;
+  grid-template-columns: 100px 1fr 100px 5fr;
 
   height: 100%;
   align-items: center;
