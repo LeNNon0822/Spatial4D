@@ -17,5 +17,6 @@ import contents from "../components/contents.vue";
   min-width: 960px;
   height: fit-content;
   box-sizing: border-box;
+  background-color: #f0f0f0;
 }
 </style>

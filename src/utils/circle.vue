@@ -20,7 +20,19 @@
   position: relative;
   width: 100%;
   height: 100%;
+  color: transparent;
+  animation: showText 1s ease-in-out 2s both;
 }
+
+@keyframes showText {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
 .circleFiller {
   display: flex;
   position: absolute;
@@ -32,14 +44,17 @@
   align-items: center; */
   border-radius: 50%;
   background-color: transparent;
-  animation: showColor 1s ease-in-out 2s both;
+  animation: showColor 1s ease-in-out 1.75s both;
+  box-shadow: 2px 8px 4px transparent;
 }
 @keyframes showColor {
   0% {
     background-color: transparent;
+    box-shadow: 2px 8px 4px transparent;
   }
   100% {
     background-color: var(--theme-color);
+    box-shadow: 2px 4px 2px #83cdff;
   }
 }
 
@@ -65,7 +80,7 @@
 .leftCircle {
   width: 160%;
   height: 80%;
-  border: 20px solid white;
+  border: 20px solid transparent;
   position: absolute;
   border-radius: 50%;
   left: 0px;
@@ -93,7 +108,7 @@
   width: 160%;
   height: 80%;
   border-radius: 50%;
-  border: 20px solid white;
+  border: 20px solid transparent;
   position: absolute;
   border-top: 20px solid var(--theme-color);
   border-right: 20px solid var(--theme-color);

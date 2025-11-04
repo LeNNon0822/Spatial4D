@@ -183,7 +183,7 @@
 .arthorNameLine {
   display: flex;
   width: 100%;
-  font-family: "Alibaba-puhui-medium";
+  font-family: "PH-medium";
   box-sizing: border-box;
   flex-wrap: wrap;
   padding: 0 20%;
@@ -208,7 +208,7 @@
   font-size: 60%;
   margin-right: 0.25vmax;
   color: #ffffff;
-  font-family: "Alibaba-puhui-regular";
+  font-family: "PH-regular";
 }
 .expression {
   display: flex;
@@ -224,12 +224,12 @@
 .expressionText {
   font-size: 1vmax;
   color: #ffffff;
-  font-family: "Alibaba-puhui-regular";
+  font-family: "PH-regular";
 }
 .group {
   display: flex;
   width: 100%;
-  font-family: "Alibaba-puhui-regular";
+  font-family: "PH-regular";
   box-sizing: border-box;
   flex-wrap: wrap;
   padding: 0 25%;
@@ -245,7 +245,7 @@
   margin-right: 1vmax;
 }
 .groupName {
-  font-family: "Alibaba-puhui-medium";
+  font-family: "PH-medium";
   color: #209cee;
 }
 .buttonGroup {
@@ -258,7 +258,7 @@
   height: 2vmax;
   justify-content: center;
   align-items: center;
-  font-family: "Alibaba-puhui-regular";
+  font-family: "PH-regular";
   border-radius: 1.5vmax;
   border: #363636 solid 0px;
   background-color: #363636;

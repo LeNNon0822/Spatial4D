@@ -52,27 +52,27 @@ html.lenis body {
 }
 body {
   /* word setting */
-  font-family: "PS-regular", "Alibaba-puhui-regular";
+  font-family: "PS-regular", "PH-regular";
 }
 
 @font-face {
-  font-family: "Alibaba-puhui-regular";
-  font-display: swap;
-  src: url("@/assets/font/Alibaba-PuHuiTi-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Alibaba-puhui-medium";
+  font-family: "PH-regular";
   font-display: swap;
   src: url("./assets/font/Alibaba-PuHuiTi-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "PH-medium";
+  font-display: swap;
+  src: url("./assets/font/Alibaba-PuHuiTi-Medium.ttf") format("truetype");
+}
 
 @font-face {
-  font-family: "Alibaba-puhui-heavy";
+  font-family: "PH-heavy";
   font-display: swap;
   src: url("./assets/font/Alibaba-PuHuiTi-Heavy.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Alibaba-puhui-bold";
+  font-family: "PH-bold";
   font-display: swap;
   src: url("./assets/font/Alibaba-PuHuiTi-Bold.ttf") format("truetype");
 }
