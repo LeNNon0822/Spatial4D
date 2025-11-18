@@ -1,7 +1,7 @@
 <template>
   <div class="contentsContainer">
     <div class="circleContainer">
-      <circ class="circleText"> SI-Bench </circ>
+      <circ class="circleText"> Spatial4D </circ>
     </div>
     <div class="connect">
       <div class="line"></div>

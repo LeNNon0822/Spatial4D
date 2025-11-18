@@ -4,7 +4,7 @@ const routes = [
   {
     path: "/",
     name: "Homepage",
-    meta: { title: "Homepage" },
+    meta: { title: "Spatial4D" },
     component: () => import("@/views/homepage.vue"),
   },
 ];
