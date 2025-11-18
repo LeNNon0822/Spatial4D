@@ -18,8 +18,8 @@
   --theme-color: #209cee;
   display: flex;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   color: transparent;
   animation: showText 1s ease-in-out 2s both;
 }
@@ -70,16 +70,16 @@
 }
 
 .left {
-  width: 50%;
-  height: 100%;
+  width: 100px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   /* background: pink; */
 }
 
 .leftCircle {
-  width: 160%;
-  height: 80%;
+  width: 162px;
+  height: 160px;
   border: 20px solid transparent;
   position: absolute;
   border-radius: 50%;
@@ -96,8 +96,8 @@
 }
 
 .right {
-  width: 50%;
-  height: 100%;
+  width: 100px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -105,8 +105,8 @@
 }
 
 .rightCircle {
-  width: 160%;
-  height: 80%;
+  width: 162px;
+  height: 160px;
   border-radius: 50%;
   border: 20px solid transparent;
   position: absolute;
