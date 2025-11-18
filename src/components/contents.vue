@@ -2148,8 +2148,6 @@
       <div class="imgGroupContainer">
         <div class="imgContainer">
           <img src="@/assets/img/SpatialCausalPrediction1-1.png" alt="" />
-        </div>
-        <div class="imgContainer">
           <img src="@/assets/img/SpatialCausalPrediction1-2.png" alt="" />
         </div>
         <div class="imgContainer">
@@ -2194,8 +2192,6 @@
       <div class="imgGroupContainer">
         <div class="imgContainer">
           <img src="@/assets/img/SpatialCausalPrediction2-1.png" alt="" />
-        </div>
-        <div class="imgContainer">
           <img src="@/assets/img/SpatialCausalPrediction2-2.png" alt="" />
         </div>
       </div>
@@ -2236,8 +2232,6 @@
       <div class="imgGroupContainer">
         <div class="imgContainer">
           <img src="@/assets/img/SpatialCausalPrediction3-1.png" alt="" />
-        </div>
-        <div class="imgContainer">
           <img src="@/assets/img/SpatialCausalPrediction3-2.png" alt="" />
         </div>
         <div class="imgContainer">
@@ -2605,33 +2599,6 @@ const scrollTo = (id) => {
 };
 import "vue3-video-play/dist/style.css";
 import { reactive } from "vue";
-console.log;
-const options = reactive({
-  width: "800px", //播放器宽度
-  height: "450px", //播放器高度
-  color: "#409eff", //主题色
-  title: "", //视频名称
-  src: "@/assets/mp4/cover_demo.mp4", //视频源
-  muted: false, //静音
-  webFullScreen: false,
-  speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"], //播放倍速
-  autoPlay: false, //自动播放
-  loop: false, //循环播放
-  mirror: false, //镜像画面
-  ligthOff: false, //关灯模式
-  volume: 0.3, //默认音量大小
-  control: true, //是否显示控制
-  controlBtns: [
-    "audioTrack",
-    "quality",
-    "speedRate",
-    "volume",
-    "setting",
-    "pip",
-    "pageFullScreen",
-    "fullScreen",
-  ], //显示所有按钮,
-});
 </script>
 
 <style scoped>
@@ -2852,6 +2819,7 @@ video {
   max-width: min(800px, 90%);
   max-height: 540px;
   border-radius: 12px;
+  background-color: #818181;
   /* aspect-ratio: 16/9; */
 }
 .imgGroupContainer {
@@ -2873,9 +2841,16 @@ video {
 .imgContainer {
   display: flex;
   width: 100%;
+
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
+.imgContainer img {
+  max-width: max(50%, 200px);
+  border-radius: 12px;
+}
+
 .qanda {
   display: flex;
   flex-direction: column;
