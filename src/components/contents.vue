@@ -80,41 +80,38 @@
       </div>
     </div> -->
     <!-- <div class="subTaskContainer"></div> -->
+    <!-- <div class="videoDisplayContainer">
+      <video playsinline loop controls disable-picture-in-picture="true">
+        <source src="@/assets/mp4/ObjectSizeEstimation1.mp4" type="video/mp4" />
+      </video>
+    </div> -->
   </div>
-  <div class="qandaContainer">
-    <div class="qandaItemContainer" id="1-1">
-      <div class="mainTaskBlockTitle">物体理解</div>
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        物体大小估计
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+
+  <div class="subTaskBlockContainer" id="1-1">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">物体理解</div>
+
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">物体大小估计</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
-          />
-        </div>
-        所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
+          /> </span
+        >所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectSizeEstimation1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectSizeEstimation1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -133,15 +130,15 @@
           <div class="textContainer">223cm</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectSizeEstimation2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectSizeEstimation2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -160,15 +157,15 @@
           <div class="textContainer">162cm</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectSizeEstimation3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectSizeEstimation3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -190,39 +187,32 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="1-2">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        物体属性识别
+  </div>
+  <div class="subTaskBlockContainer" id="1-2">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">物体理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">物体属性识别</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
-          />
-        </div>
-        所包含数据组：scannet、3rscan
+          /> </span
+        >所包含数据组：scannet、3rscan
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectAttributeRecognition1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="../assets/mp4/ObjectAttributeRecognition1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -253,15 +243,15 @@
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectAttributeRecognition2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="../assets/mp4/ObjectAttributeRecognition2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -292,15 +282,15 @@
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectAttributeRecognition3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="../assets/mp4/ObjectAttributeRecognition3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -334,35 +324,32 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="1-3">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        物体可供性识别
+  </div>
+  <div class="subTaskBlockContainer" id="1-3">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">物体理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">物体可供性识别</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
-          />
-        </div>
-        所包含数据组：arkitscenes、3rscan、scannet
+          /> </span
+        >所包含数据组：arkitscenes、3rscan、scannet
+      </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectUtility1.mp4"
+        />
       </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/ObjectUtility1.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -394,12 +381,15 @@
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectUtility2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/ObjectUtility2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -431,12 +421,15 @@
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectUtility3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/ObjectUtility3.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -470,36 +463,32 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="2-1">
-      <div class="mainTaskBlockTitle">场景理解</div>
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        视觉定位
+  </div>
+  <div class="subTaskBlockContainer" id="2-1">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">场景理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">视觉定位</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
-          />
-        </div>
-        所包含数据组：arkitscenes、scannet、3rscan、waymo、nuscenes
+          /> </span
+        >所包含数据组：arkitscenes、scannet、3rscan、waymo、nuscenes
+      </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/VideoGrounding1.mp4"
+        />
       </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/VideoGrounding1.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -544,12 +533,15 @@
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/VideoGrounding2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/VideoGrounding2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -598,12 +590,15 @@
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/VideoGrounding3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/VideoGrounding3.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -650,39 +645,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="2-2">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        面积估计
+  </div>
+  <div class="subTaskBlockContainer" id="2-2">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">场景理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">面积估计</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：arkitscenes、scannet、scannet++、3rscan
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/RoomSizeEstimation1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/RoomSizeEstimation1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -701,15 +690,15 @@
           <div class="textContainer">10.5</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/RoomSizeEstimation2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/RoomSizeEstimation2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -728,15 +717,15 @@
           <div class="textContainer">24.9</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/RoomSizeEstimation3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/RoomSizeEstimation3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -756,37 +745,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="2-3">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        绝对距离估计
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+  </div>
+  <div class="subTaskBlockContainer" id="2-3">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">场景理解</div>
+
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">绝对距离估计</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectAbsoluteDistance1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectAbsoluteDistance1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -807,15 +792,15 @@
           <div class="textContainer">8.0</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectAbsoluteDistance2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectAbsoluteDistance2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -837,15 +822,15 @@
           <div class="textContainer">20.2</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectAbsoluteDistance3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectAbsoluteDistance3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -865,35 +850,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="2-4">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        场景类别识别
+  </div>
+  <div class="subTaskBlockContainer" id="2-4">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">场景理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">场景类别识别</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：scannet、3rscan
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/SceneRecognition1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/SceneRecognition1.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -928,12 +911,15 @@
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/SceneRecognition2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/SceneRecognition2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -969,12 +955,15 @@
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/SceneRecognition3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/SceneRecognition3.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1011,36 +1000,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="3-1">
-      <div class="mainTaskBlockTitle">空间关系理解</div>
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        物体计数
+  </div>
+  <div class="subTaskBlockContainer" id="3-1">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">空间关系理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">物体计数</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：arkitscenes、scannet、scannet++、3rscan
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectCounting1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/ObjectCounting1.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1058,12 +1044,15 @@
           <div class="textContainer">3</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectCounting2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/ObjectCounting2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1081,12 +1070,15 @@
           <div class="textContainer">2</div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectCounting3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/ObjectCounting3.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1105,39 +1097,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="3-2">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        相对方向
+  </div>
+  <div class="subTaskBlockContainer" id="3-2">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">空间关系理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">相对方向</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectRelativeDirection1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectRelativeDirection1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1174,15 +1160,15 @@
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectRelativeDirection2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectRelativeDirection2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1216,15 +1202,15 @@
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectRelativeDirection3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectRelativeDirection3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1259,38 +1245,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="3-3">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        相对距离
+  </div>
+  <div class="subTaskBlockContainer" id="3-3">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">空间关系理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">相对距离</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：arkitscenes、scannet、scannet++、3rscan、waymo、nuscenes
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectRelativeDistance1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectRelativeDistance1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1332,15 +1313,15 @@
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectRelativeDistance2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectRelativeDistance2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1372,15 +1353,15 @@
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ObjectRelativeDistance3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ObjectRelativeDistance3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1413,38 +1394,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="3-4">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        空间状态记忆(长视频)
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+  </div>
+  <div class="subTaskBlockContainer" id="3-4">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">空间关系理解</div>
+
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">空间状态记忆(长视频)</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：epic-kitchens、egoschema、video-mme
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/SpatialStateMemory1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/SpatialStateMemory1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1479,16 +1455,15 @@
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/SpatialStateMemory2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="../assets/mp4/SpatialStateMemory2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1518,15 +1493,15 @@
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/SpatialStateMemory3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="../assets/mp4/SpatialStateMemory3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1564,36 +1539,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="4-1">
-      <div class="mainTaskBlockTitle">时空关系理解</div>
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        出现顺序
+  </div>
+  <div class="subTaskBlockContainer" id="4-1">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">时空关系理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">出现顺序</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：arkitscenes、scannet、scannet++、3rscan
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/AppearanceOrder1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/AppearanceOrder1.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1624,12 +1596,15 @@
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/AppearanceOrder2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/AppearanceOrder2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1660,12 +1635,15 @@
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/AppearanceOrder3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/AppearanceOrder3.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1698,38 +1676,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="4-2">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        动作理解
+  </div>
+  <div class="subTaskBlockContainer" id="4-2">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">时空关系理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">动作理解</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：youcook2
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ActionRecognition1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ActionRecognition1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1762,15 +1735,15 @@
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ActionRecognition2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ActionRecognition2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1804,15 +1777,15 @@
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/ActionRecognition3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/ActionRecognition3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1852,39 +1825,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="4-3">
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        状态变化理解
+  </div>
+  <div class="subTaskBlockContainer" id="4-3">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">时空关系理解</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">状态变化理解</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：charades-ego
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/StateChangeUnderstanding1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/StateChangeUnderstanding1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1919,15 +1886,15 @@
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/StateChangeUnderstanding2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/StateChangeUnderstanding2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -1961,15 +1928,15 @@
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/StateChangeUnderstanding3.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source
-              src="@/assets/mp4/StateChangeUnderstanding3.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -2001,37 +1968,33 @@
         </div>
       </div>
     </div>
-    <div class="qandaItemContainer" id="5-1">
-      <div class="mainTaskBlockTitle">空间推理</div>
-      <div class="qandaItemTitle">
-        <div class="doubleCircle">
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-          <div class="transCircle"></div>
-        </div>
-        路径规划
+  </div>
+  <div class="subTaskBlockContainer" id="5-1">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">空间推理</div>
 
-        <div class="doubleCircle">
-          <div class="transCircle"></div>
-          <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        </div>
-      </div>
-      <div class="datasetUsed">
-        <div class="datasetIconContainer">
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">路径规划</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
           <img
             class="datasetIcon"
             src="../assets/icon/databaseplus-fill.svg"
             alt=""
           />
-        </div>
+        </span>
         所包含数据组：arkitscenes、scannet、scannet++、roomtour3d、waymo、nuscenes
       </div>
-
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/RoutePlanning1.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/RoutePlanning1.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -2073,12 +2036,15 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/RoutePlanning2.mp4"
+        />
+      </div>
       <div class="qanda">
-        <div class="videoDisplayContainer">
-          <video playsinline loop controls disable-picture-in-picture="true">
-            <source src="@/assets/mp4/RoutePlanning2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="q">
           <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
@@ -2121,467 +2087,447 @@
       </div>
     </div>
   </div>
-  <div class="qandaItemContainer" id="5-2">
-    <div class="qandaItemTitle">
-      <div class="doubleCircle">
-        <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        <div class="transCircle"></div>
-      </div>
-      空间因果预测
+  <div class="subTaskBlockContainer" id="5-2">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">空间推理</div>
 
-      <div class="doubleCircle">
-        <div class="transCircle"></div>
-        <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">空间因果预测</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
+          <img
+            class="datasetIcon"
+            src="../assets/icon/databaseplus-fill.svg"
+            alt=""
+          />
+        </span>
+        所包含数据组：arkitscenes、scannet、scannet++、waymo、nuscenes
       </div>
     </div>
-    <div class="datasetUsed">
-      <div class="datasetIconContainer">
-        <img
-          class="datasetIcon"
-          src="../assets/icon/databaseplus-fill.svg"
-          alt=""
-        />
-      </div>
-      所包含数据组：arkitscenes、scannet、scannet++、waymo、nuscenes
-    </div>
-    <div class="qanda">
+    <div class="imgBlock">
       <div class="imgGroupContainer">
-        <div class="imgContainer">
-          <img src="@/assets/img/SpatialCausalPrediction1-1.png" alt="" />
-          <img src="@/assets/img/SpatialCausalPrediction1-2.png" alt="" />
-        </div>
-        <div class="imgContainer">
-          <img src="@/assets/img/SpatialCausalPrediction1-3.png" alt="" />
-        </div>
+        <img src="@/assets/img/SpatialCausalPrediction1-1.png" alt="" />
+        <img src="@/assets/img/SpatialCausalPrediction1-2.png" alt="" />
+        <img src="@/assets/img/SpatialCausalPrediction1-3.png" alt="" />
       </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          Based on the continuous images, in which direction is the camera
-          moving?
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            Based on the continuous images, in which direction is the camera
+            moving?
 
-          <div class="optionContainer">
-            <span class="option">A</span>: "Left"
-          </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "Right"
-          </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "Front"
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "Rear"
+            <div class="optionContainer">
+              <span class="option">A</span>: "Left"
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "Right"
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "Front"
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "Rear"
+            </div>
           </div>
         </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">C</span>
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            <span class="option">C</span>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="qanda">
+    <div class="imgBlock">
       <div class="imgGroupContainer">
-        <div class="imgContainer">
-          <img src="@/assets/img/SpatialCausalPrediction2-1.png" alt="" />
-          <img src="@/assets/img/SpatialCausalPrediction2-2.png" alt="" />
-        </div>
+        <img src="@/assets/img/SpatialCausalPrediction2-1.png" alt="" />
+        <img src="@/assets/img/SpatialCausalPrediction2-2.png" alt="" />
       </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          With the camera facing backward, in which direction is the white truck
-          moving?
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            With the camera facing backward, in which direction is the white
+            truck moving?
 
-          <div class="optionContainer">
-            <span class="option">A</span>: "Left"
-          </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "Right"
-          </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "Front"
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "Rear"
+            <div class="optionContainer">
+              <span class="option">A</span>: "Left"
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "Right"
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "Front"
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "Rear"
+            </div>
           </div>
         </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">C</span>
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            <span class="option">C</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="qanda">
+    <div class="imgBlock">
       <div class="imgGroupContainer">
-        <div class="imgContainer">
-          <img src="@/assets/img/SpatialCausalPrediction3-1.png" alt="" />
-          <img src="@/assets/img/SpatialCausalPrediction3-2.png" alt="" />
-        </div>
-        <div class="imgContainer">
-          <img src="@/assets/img/SpatialCausalPrediction3-3.png" alt="" />
-        </div>
+        <img src="@/assets/img/SpatialCausalPrediction3-1.png" alt="" />
+        <img src="@/assets/img/SpatialCausalPrediction3-2.png" alt="" />
+        <img src="@/assets/img/SpatialCausalPrediction3-3.png" alt="" />
       </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          Which direction is the toilet relative to me when I am taking image 1?
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            Which direction is the toilet relative to me when I am taking image
+            1?
 
-          <div class="optionContainer">
-            <span class="option">A</span>: "Front left"
-          </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "Front right"
-          </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "Behind left"
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "Behind right"
+            <div class="optionContainer">
+              <span class="option">A</span>: "Front left"
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "Front right"
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "Behind left"
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "Behind right"
+            </div>
           </div>
         </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">A</span>
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            <span class="option">A</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="qandaItemContainer" id="6-1">
-    <div class="mainTaskBlockTitle">时空推理</div>
-    <div class="qandaItemTitle">
-      <div class="doubleCircle">
-        <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        <div class="transCircle"></div>
-      </div>
-      时空因果预测
+  <div class="subTaskBlockContainer" id="6-1">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">时空推理</div>
 
-      <div class="doubleCircle">
-        <div class="transCircle"></div>
-        <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">时空因果预测</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
+          <img
+            class="datasetIcon"
+            src="../assets/icon/databaseplus-fill.svg"
+            alt=""
+          />
+        </span>
+        所包含数据组：epic-kitchens、waymo、nuscenes
       </div>
     </div>
-    <div class="datasetUsed">
-      <div class="datasetIconContainer">
-        <img
-          class="datasetIcon"
-          src="../assets/icon/databaseplus-fill.svg"
-          alt=""
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/Space-TimeCausalPrediction1.mp4"
         />
       </div>
-      所包含数据组：epic-kitchens、waymo、nuscenes
-    </div>
-    <div class="qanda">
-      <div class="videoDisplayContainer">
-        <video playsinline loop controls disable-picture-in-picture="true">
-          <source
-            src="@/assets/mp4/Space-TimeCausalPrediction1.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          What is the person going to do?
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            What is the person going to do?
 
-          <div class="optionContainer">
-            <span class="option">A</span>: "He will sit down and wait without
-            using the machine."
-          </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "He will pour laundry detergent on
-            top of his clothes."
-          </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "He will put his card into the
-            laundry machine’s slot and press the buttons."
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "He will use the blue machine to
-            check his balance."
+            <div class="optionContainer">
+              <span class="option">A</span>: "He will sit down and wait without
+              using the machine."
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "He will pour laundry detergent on
+              top of his clothes."
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "He will put his card into the
+              laundry machine’s slot and press the buttons."
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "He will use the blue machine to
+              check his balance."
+            </div>
           </div>
         </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">C</span>
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            <span class="option">C</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="qanda">
-      <div class="videoDisplayContainer">
-        <video playsinline loop controls disable-picture-in-picture="true">
-          <source
-            src="@/assets/mp4/Space-TimeCausalPrediction2.mp4"
-            type="video/mp4"
-          />
-        </video>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/Space-TimeCausalPrediction2.mp4"
+        />
       </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            What is the person going to do?
+            <div class="optionContainer">
+              <span class="option">A</span>: "He will wash the vegetables in the
+              sink."
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "He will place the plate back into
+              the refrigerator."
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "He will start cutting the
+              vegetables on the counter."
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "He will sharpen the knife."
+            </div>
+          </div>
         </div>
-        <div class="textContainer">
-          What is the person going to do?
-          <div class="optionContainer">
-            <span class="option">A</span>: "He will wash the vegetables in the
-            sink."
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
           </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "He will place the plate back into
-            the refrigerator."
+          <div class="textContainer">
+            <span class="option">A </span>
           </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "He will start cutting the vegetables
-            on the counter."
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "He will sharpen the knife."
-          </div>
-        </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">A </span>
         </div>
       </div>
     </div>
-    <div class="qanda">
-      <div class="videoDisplayContainer">
-        <video playsinline loop controls disable-picture-in-picture="true">
-          <source
-            src="@/assets/mp4/Space-TimeCausalPrediction3.mp4"
-            type="video/mp4"
-          />
-        </video>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/Space-TimeCausalPrediction3.mp4"
+        />
       </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          What is the person going to do?
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            What is the person going to do?
 
-          <div class="optionContainer">
-            <span class="option">A</span>: "He will place the onion pieces back
-            on the cutting board."
-          </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "He will throw the onion scraps into
-            the trash can."
-          </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "He will wash the onion under running
-            water."
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "He will add the onion pieces into
-            the salad bowl."
+            <div class="optionContainer">
+              <span class="option">A</span>: "He will place the onion pieces
+              back on the cutting board."
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "He will throw the onion scraps
+              into the trash can."
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "He will wash the onion under
+              running water."
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "He will add the onion pieces into
+              the salad bowl."
+            </div>
           </div>
         </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">B</span>
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            <span class="option">B</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="qandaItemContainer" id="6-2">
-    <div class="qandaItemTitle">
-      <div class="doubleCircle">
-        <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
-        <div class="transCircle"></div>
-      </div>
-      动态物理预测
+  <div class="subTaskBlockContainer" id="6-2">
+    <div class="taskIntro">
+      <div class="mainTaskDec">MAINTASK</div>
+      <div class="mainTaskTitle">时空推理</div>
 
-      <div class="doubleCircle">
-        <div class="transCircle"></div>
-        <img class="stripeCircle" src="../assets/icon/circle.png" alt="" />
+      <div class="subTaskDec">SUBTASK</div>
+      <div class="subTaskTitle">动态物理预测</div>
+      <div class="subTaskInfo">
+        <span class="datasetIconContainer">
+          <img
+            class="datasetIcon"
+            src="../assets/icon/databaseplus-fill.svg"
+            alt=""
+          />
+        </span>
+        所包含数据组：videophy-2
       </div>
     </div>
-    <div class="datasetUsed">
-      <div class="datasetIconContainer">
-        <img
-          class="datasetIcon"
-          src="../assets/icon/databaseplus-fill.svg"
-          alt=""
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/DynamicPhysicalPrediction1.mp4"
         />
       </div>
-      所包含数据组：epic-kitchens、waymo、nuscenes
-    </div>
-    <div class="qanda">
-      <div class="videoDisplayContainer">
-        <video playsinline loop controls disable-picture-in-picture="true">
-          <source
-            src="@/assets/mp4/DynamicPhysicalPrediction1.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          Which option violates physical common sense the most in this video?
-          <div class="optionContainer">
-            <span class="option">A</span>: "The rider’s leg appears fused with
-            the scooter handle."
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
           </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "The scooter rolls forward while both
-            wheels remain perfectly still."
-          </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "The scooter’s shadow peels off the
-            ground and climbs the wall."
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "The rider and scooter briefly
-            levitate together above the pavement."
+          <div class="textContainer">
+            Which option violates physical common sense the most in this video?
+            <div class="optionContainer">
+              <span class="option">A</span>: "The rider’s leg appears fused with
+              the scooter handle."
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "The scooter rolls forward while
+              both wheels remain perfectly still."
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "The scooter’s shadow peels off the
+              ground and climbs the wall."
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "The rider and scooter briefly
+              levitate together above the pavement."
+            </div>
           </div>
         </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">A</span>
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            <span class="option">A</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="qanda">
-      <div class="videoDisplayContainer">
-        <video playsinline loop controls disable-picture-in-picture="true">
-          <source
-            src="@/assets/mp4/DynamicPhysicalPrediction2.mp4"
-            type="video/mp4"
-          />
-        </video>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/DynamicPhysicalPrediction2.mp4"
+        />
       </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            Which option violates physical common sense the most in this video?
+            <div class="optionContainer">
+              <span class="option">A</span>: "The bottle pours upward from the
+              cup, refilling itself without contact."
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "The cup fills while turned upside
+              down with no liquid pooling beneath it."
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "The cup fills earlier than how it
+              should be."
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "The bottle neck passes through the
+              cup wall without collision or deformation."
+            </div>
+          </div>
         </div>
-        <div class="textContainer">
-          Which option violates physical common sense the most in this video?
-          <div class="optionContainer">
-            <span class="option">A</span>: "The bottle pours upward from the
-            cup, refilling itself without contact."
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
           </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "The cup fills while turned upside
-            down with no liquid pooling beneath it."
+          <div class="textContainer">
+            <span class="option">C </span>
           </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "The cup fills earlier than how it
-            should be."
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "The bottle neck passes through the
-            cup wall without collision or deformation."
-          </div>
-        </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">C </span>
         </div>
       </div>
     </div>
-    <div class="qanda">
-      <div class="videoDisplayContainer">
-        <video playsinline loop controls disable-picture-in-picture="true">
-          <source
-            src="@/assets/mp4/DynamicPhysicalPrediction3.mp4"
-            type="video/mp4"
-          />
-        </video>
+    <div class="videoBlock">
+      <div class="videoPlayerContainer">
+        <vue3videoplay
+          class="videoPlayer"
+          src="src/assets/mp4/DynamicPhysicalPrediction3.mp4"
+        />
       </div>
-      <div class="q">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          Which option violates physical common sense the most in this video?
+      <div class="qanda">
+        <div class="q">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            Which option violates physical common sense the most in this video?
 
-          <div class="optionContainer">
-            <span class="option">A</span>: "When tapped, the bottle’s shape
-            changes. "
-          </div>
-          <div class="optionContainer">
-            <span class="option">B</span>: "The bottle teleports a half meter to
-            the side between frames while the hand remains continuous."
-          </div>
-          <div class="optionContainer">
-            <span class="option">C</span>: "Sound from the tap causes the liquid
-            inside to levitate and form a rigid column."
-          </div>
-          <div class="optionContainer">
-            <span class="option">D</span>: "The bottle mouth seals itself after
-            being opened, with no observable mechanism."
+            <div class="optionContainer">
+              <span class="option">A</span>: "When tapped, the bottle’s shape
+              changes. "
+            </div>
+            <div class="optionContainer">
+              <span class="option">B</span>: "The bottle teleports a half meter
+              to the side between frames while the hand remains continuous."
+            </div>
+            <div class="optionContainer">
+              <span class="option">C</span>: "Sound from the tap causes the
+              liquid inside to levitate and form a rigid column."
+            </div>
+            <div class="optionContainer">
+              <span class="option">D</span>: "The bottle mouth seals itself
+              after being opened, with no observable mechanism."
+            </div>
           </div>
         </div>
-      </div>
-      <div class="a">
-        <div class="tinyTriContainer">
-          <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
-          <div class="tinyTri"></div>
-        </div>
-        <div class="textContainer">
-          <span class="option">A</span>
+        <div class="a">
+          <div class="tinyTriContainer">
+            <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
+            <div class="tinyTri"></div>
+          </div>
+          <div class="textContainer">
+            <span class="option">A</span>
+          </div>
         </div>
       </div>
     </div>
@@ -2590,6 +2536,7 @@
 
 <script setup>
 import circ from "../utils/circle.vue";
+import vue3videoplay from "../utils/vue3videoplay.vue";
 const scrollTo = (id) => {
   document.getElementById(id).scrollIntoView({
     behavior: "smooth",
@@ -2597,6 +2544,7 @@ const scrollTo = (id) => {
     inline: "nearest",
   });
 };
+
 import "vue3-video-play/dist/style.css";
 import { reactive } from "vue";
 </script>
@@ -2727,13 +2675,155 @@ import { reactive } from "vue";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; */
 }
+
+.subTaskBlockContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  box-sizing: border-box;
+  padding: 5% 15%;
+  column-gap: 30px;
+}
+.taskIntro {
+  display: flex;
+  flex-direction: column;
+}
+.mainTaskInfo {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  /* margin: 10px 0; */
+  color: #070000cc;
+  font-family: "PH-heavy";
+  font-size: 16px;
+  /* padding: 2.5px 0; */
+  line-height: 1.5;
+  /* align-items: center; */
+  /* background-color: #9ccaff; */
+}
+.mainTaskDec {
+  display: flex;
+  width: fit-content;
+  /* margin: 10px 0; */
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding: 2.5px 10px;
+  font-family: "PH-heavy";
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #000000;
+}
+
+.mainTaskTitle {
+  font-family: "PH-heavy";
+  font-size: 18px;
+  color: #000000;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+
+.taskInfo {
+  display: flex;
+  width: fit-content;
+  /* margin: 10px 0; */
+  color: #070000cc;
+  /* margin-bottom: 20px; */
+  padding: 2.5px 10px;
+  font-family: "PH-heavy";
+  font-size: 16px;
+  line-height: 1.5;
+  /* background-color: #9ccaff; */
+}
+.subTaskDec {
+  display: flex;
+  width: fit-content;
+  /* margin: 10px 0; */
+  color: #ffffffcc;
+  margin-bottom: 10px;
+  padding: 2.5px 10px;
+  font-family: "PH-heavy";
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #9ccaff;
+}
+.subTaskTitle {
+  font-family: "PH-heavy";
+  font-size: 40px;
+  color: #209cee;
+  margin-bottom: 20px;
+}
+.subTaskInfo {
+  line-height: 1.5;
+  font-family: "PH-regular";
+}
+.videoBlock {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* width: 100%;
+  height: 100%; */
+}
+.imgBlock {
+  display: grid;
+  grid-template-rows: 600px 1fr;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.imgGroupContainer {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 600px;
+}
+.imgGroupContainer img {
+  width: 320px;
+  height: 180px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 2px 4px 4px #0000007f;
+}
+
+.videoPlayerContainer {
+  display: flex;
+  width: 320px;
+  height: 180px;
+  /* width: fit-content;
+  height: fit-content; */
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 4px #0000007f;
+  /* padding: 0 10%; */
+  /* margin: 50px 0; */
+  margin-bottom: 15px;
+}
+.videoPlayerContainer:hover {
+  transform: translateY(-10px);
+  box-shadow: 4px 14px 14px #0000007f;
+}
+.videoPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
 .qandaContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
 
   box-sizing: border-box;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
   padding-bottom: 10vmax;
 }
 
@@ -2745,10 +2835,10 @@ import { reactive } from "vue";
   padding-top: 0;
 }
 
-.qandaItemContainer:nth-child(odd) {
+.subTaskBlockContainer:nth-child(odd) {
   background-color: #f5f5f5;
 }
-.qandaItemContainer:nth-child(even) {
+.subTaskBlockContainer:nth-child(even) {
   background-color: #f0f0f0;
 }
 
@@ -2798,14 +2888,14 @@ import { reactive } from "vue";
   align-items: center;
 }
 .datasetIconContainer {
-  display: flex;
+  display: inline-flex;
   width: 20px;
   height: 20px;
-  margin: 0 10px;
+  margin-right: 10px;
   overflow: hidden;
 }
 .datasetIcon {
-  filter: drop-shadow(#209cee -100px 0 0);
+  filter: drop-shadow(#000000 -100px 0 0);
   transform: translateX(100px);
 }
 .videoDisplayContainer {
@@ -2822,22 +2912,7 @@ video {
   background-color: #818181;
   /* aspect-ratio: 16/9; */
 }
-.imgGroupContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  width: 100%;
-  /* max-width: min(800px, 90%); */
-  padding: 0 5%;
-  margin: 50px 0;
-  gap: 20px;
-  /* row-gap: 20px;
-  column-gap: 20px;
-  grid-template-areas:
-    "a b"
-    "c c"; */
-}
+
 .imgContainer {
   display: flex;
   width: 100%;
@@ -2846,25 +2921,21 @@ video {
   align-items: center;
   gap: 20px;
 }
-.imgContainer img {
-  max-width: max(50%, 200px);
-  border-radius: 12px;
-}
 
 .qanda {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 80%;
+  width: 100%;
 
   font-family: "PH-regular";
-  font-size: 16px;
-  margin-top: 50px;
+  font-size: 14px;
+  margin-top: 10px;
   line-height: 1.5;
   border-radius: 10px;
   box-sizing: border-box;
-  padding: 2.5vmax;
-  border: #209cee dotted 3px;
+  padding: 0.5vmax;
+  /* border: #209cee dotted 3px; */
 }
 .qanda > * {
   margin-top: 18px;
@@ -2880,36 +2951,46 @@ video {
 .a {
   display: grid;
   box-sizing: border-box;
-  height: 100%;
+  height: fit-content;
+  /* height: 100%; */
 }
 
 .a {
-  grid-template-columns: 120px 1fr 120px;
+  grid-template-columns: 50px 1fr 0px;
   direction: rtl;
+  flex-grow: 1;
+  align-items: flex-end;
 }
 
 .q {
-  grid-template-columns: 120px 1fr 120px;
+  grid-template-columns: 50px 1fr 0px;
 }
 
 .tinyTriContainer {
   display: flex;
-  width: 120px;
+  width: 50px;
   height: 100%;
   overflow: hidden;
   align-items: center;
 }
+.a .tinyTriContainer {
+  align-items: flex-end;
+}
 
 .qandaIcon {
   display: flex;
-  width: 80px;
+  width: 35px;
   aspect-ratio: 1;
+}
+
+.a .qandaIcon {
+  transform: translateY(-5px);
 }
 
 .tinyTri {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
 
   /* top: 0;
   left: 0;
@@ -2922,7 +3003,7 @@ video {
 }
 
 .a .tinyTri {
-  transform: translateX(-100%) rotate(45deg);
+  transform: translateX(-100%) translateY(-200%) rotate(45deg);
   background-color: #ffffff;
   box-shadow: 4px 4px 2px #00000033;
 }
@@ -2934,9 +3015,10 @@ video {
   width: fit-content;
   direction: ltr;
   /* width: 100%; */
-  height: 100%;
+  /* height: 100%; */
+  height: fit-content;
   border-radius: 10px;
-  padding: 1vmax 2.5vmax;
+  padding: 0.75vmax 1.5vmax;
   align-items: flex-start;
   justify-content: center;
   box-shadow: 4px 4px 2px #00000033;
