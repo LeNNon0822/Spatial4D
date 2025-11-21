@@ -21,6 +21,42 @@ gsap.ticker.add((time) => {
 });
 
 gsap.ticker.lagSmoothing(0);
+import { onMounted, onUpdated } from "vue";
+
+// 刷新回归顶点
+onMounted(() => {
+  window.scrollTo(0, 0);
+  nextTick(() => {
+    window.scrollTo(0, 0);
+  });
+  // 延迟执行
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+    console.log("生产环境延迟重置执行");
+  }, 500); // 生产环境可能需要更长时间
+
+  // 额外延迟保障
+  setTimeout(() => {
+    if (window.scrollY !== 0) {
+      window.scrollTo(0, 0);
+      console.log("二次检查重置执行");
+    }
+  }, 1000);
+
+  // 禁用浏览器滚动记忆
+  if (history.scrollRestoration) {
+    history.scrollRestoration = "manual";
+  }
+});
+onUpdated(() => {
+  setTimeout(() => {
+    if (window.scrollY > 100) {
+      // 设置一个阈值，避免微小偏移
+      console.log("检测到异常滚动，重新重置位置");
+      window.scrollTo(0, 0);
+    }
+  }, 300);
+});
 </script>
 
 <style scoped>

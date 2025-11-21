@@ -16,7 +16,7 @@ import backToTop from "../utils/backToTop.vue";
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  min-width: 960px;
+  min-width: 1200px;
   height: fit-content;
   box-sizing: border-box;
   background-color: #f0f0f0;

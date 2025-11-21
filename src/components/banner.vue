@@ -1,7 +1,7 @@
 <template>
   <div class="bannerContainer">
     <div class="titleContainer">
-      <div class="title">Spatial4D</div>
+      <div class="title">Spatial4D-Bench</div>
       <div class="subtitle">Placeholder---Placeholder---Placeholder</div>
     </div>
     <div class="arthorNameLine">

@@ -8,12 +8,6 @@ const routes = [
     component: () => import("@/views/homepage.vue"),
   },
   {
-    path: "/test",
-    name: "范例",
-    meta: { title: "fanli" },
-    component: () => import("@/views/test.vue"),
-  },
-  {
     path: "/:cathAll(.*)",
     name: "404NotFound",
     meta: { title: "404 Not Found" },
@@ -24,6 +18,15 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_PATH),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // 始终滚动到顶部
+    return new Promise((resolve) => {
+      // 给生产环境更长时间
+      setTimeout(() => {
+        resolve({ top: 0, behavior: "auto" });
+      }, 100);
+    });
+  },
 });
 
 router.beforeEach((to, from, next) => {

@@ -1,7 +1,8 @@
 <template>
-  <div class="contentsContainer">
+  <!-- <div class="contentsContainer">
     <div class="circleContainer">
-      <circ class="circleText"> Spatial4D </circ>
+      <img src="@/assets/logo/logo.png" alt="" />
+     
     </div>
     <div class="connect">
       <div class="line"></div>
@@ -69,22 +70,97 @@
         </div>
       </div>
     </div>
-    <!-- <div class="connect">
-      <div class="lineGroup">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+
+  </div> -->
+  <div class="contentsContainer">
+    <div class="logoContainer">
+      <img src="@/assets/logo/logo_only.png" alt="" />
+    </div>
+    <div class="taskBtn">Spatial4D-Bench</div>
+    <div class="verticalLine"></div>
+    <div class="horizontalLine"></div>
+    <div class="lineGroup first">
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+    </div>
+    <div class="taskGroup">
+      <div class="taskBtnContainer">
+        <div class="taskBtn" @click="scrollTo('1-1')">物体理解</div>
       </div>
-    </div> -->
-    <!-- <div class="subTaskContainer"></div> -->
-    <!-- <div class="videoDisplayContainer">
-      <video playsinline loop controls disable-picture-in-picture="true">
-        <source src="@/assets/mp4/ObjectSizeEstimation1.mp4" type="video/mp4" />
-      </video>
-    </div> -->
+      <div class="taskBtnContainer">
+        <div class="taskBtn" @click="scrollTo('2-1')">场景理解</div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="taskBtn" @click="scrollTo('3-1')">空间关系理解</div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="taskBtn" @click="scrollTo('4-1')">时空关系理解</div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="taskBtn" @click="scrollTo('5-1')">空间推理</div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="taskBtn" @click="scrollTo('6-1')">时空推理</div>
+      </div>
+    </div>
+    <div class="lineGroup second">
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+      <div class="verticalLine"></div>
+    </div>
+    <div class="taskGroup subTaskGroup">
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('1-1')">物体大小估计</div>
+          <div class="taskBtn" @click="scrollTo('1-2')">物体属性识别</div>
+          <div class="taskBtn" @click="scrollTo('1-3')">物体可供性识别</div>
+        </div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('2-1')">视觉定位</div>
+          <div class="taskBtn" @click="scrollTo('2-2')">面积估计</div>
+          <div class="taskBtn" @click="scrollTo('2-3')">绝对距离</div>
+          <div class="taskBtn" @click="scrollTo('2-4')">场景类别识别</div>
+        </div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('3-1')">物体计数</div>
+          <div class="taskBtn" @click="scrollTo('3-2')">相对方向</div>
+          <div class="taskBtn" @click="scrollTo('3-3')">相对距离</div>
+          <div class="taskBtn" @click="scrollTo('3-4')">
+            空间状态记忆（长视频）
+          </div>
+        </div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('4-1')">出现顺序</div>
+          <div class="taskBtn" @click="scrollTo('4-2')">动作理解</div>
+          <div class="taskBtn" @click="scrollTo('4-3')">状态变化理解</div>
+        </div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('5-1')">路径规划</div>
+          <div class="taskBtn" @click="scrollTo('5-2')">空间因果预测</div>
+        </div>
+      </div>
+      <div class="taskBtnContainer">
+        <div class="subTaskBtnGroup">
+          <div class="taskBtn" @click="scrollTo('6-1')">时空因果预测</div>
+          <div class="taskBtn" @click="scrollTo('6-2')">动态物理预测</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="subTaskBlockContainer" id="1-1">
@@ -108,25 +184,28 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectSizeEstimation1.mp4"
+          :src="videoPackage['../assets/mp4/ObjectSizeEstimation1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
+
           <div class="textContainer">
-            What is the length of the longest dimension (length, width, or
-            height) of the sofa, measured in centimeters?
+            <span
+              >What is the length of the longest dimension (length, width, or
+              height) of the sofa, measured in centimeters?</span
+            >
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">223cm</div>
         </div>
       </div>
@@ -135,25 +214,25 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectSizeEstimation2.mp4"
+          :src="videoPackage['../assets/mp4/ObjectSizeEstimation2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the length of the longest dimension (length, width, or
             height) of the window, measured in centimeters?
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">162cm</div>
         </div>
       </div>
@@ -162,15 +241,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectSizeEstimation3.mp4"
+          :src="videoPackage['../assets/mp4/ObjectSizeEstimation3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Given a video of 198 frames, at frame 151, what is the length of the
             longest dimension (length, width, or height) of a white sports car,
@@ -179,10 +258,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">490cm</div>
         </div>
       </div>
@@ -209,15 +288,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectAttributeRecognition1.mp4"
+          :src="videoPackage['../assets/mp4/ObjectAttributeRecognition1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What shape is the target object 'the table which is wooden and
             brown'?
@@ -236,10 +315,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -248,15 +327,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectAttributeRecognition2.mp4"
+          :src="videoPackage['../assets/mp4/ObjectAttributeRecognition2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What material is it mainly made of the target object ‘the shorter
             table in the room’?
@@ -275,10 +354,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
@@ -287,15 +366,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectAttributeRecognition3.mp4"
+          :src="videoPackage['../assets/mp4/ObjectAttributeRecognition3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What material is it mainly made of the target object 'the middle
             chair which is on one side of the table and is facing away from the
@@ -316,10 +395,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
@@ -346,15 +425,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectUtility1.mp4"
+          :src="videoPackage['../assets/mp4/ObjectUtility1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Based on the video, If I want to see computer output such as texts,
             images, videos, etc.., where can I find such an object to achieve my
@@ -374,10 +453,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
@@ -386,15 +465,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectUtility2.mp4"
+          :src="videoPackage['../assets/mp4/ObjectUtility2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Based on the video, If I want to produce a physical paper copy of a
             digital file or document, where can I find such an object to achieve
@@ -414,10 +493,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -426,15 +505,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectUtility3.mp4"
+          :src="videoPackage['../assets/mp4/ObjectUtility3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Based on the video, If I want to input text or commands into a
             computer by typing, where can I find such an object to achieve my
@@ -455,10 +534,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -485,15 +564,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/VideoGrounding1.mp4"
+          :src="videoPackage['../assets/mp4/VideoGrounding1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Detect the 3D bounding box of the toilet. Coordinate System
             Definition: X-axis points rightward, Y-axis points downward, and
@@ -526,10 +605,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
@@ -538,15 +617,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/VideoGrounding2.mp4"
+          :src="videoPackage['../assets/mp4/VideoGrounding2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Given a video of 199 frames, at frame 71, based on the description:
             a white delivery truck, detect the 3D bounding box of the described
@@ -583,10 +662,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
@@ -595,15 +674,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/VideoGrounding3.mp4"
+          :src="videoPackage['../assets/mp4/VideoGrounding3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Based on the description: the leftmost chair when facing the
             windows, detect the 3D bounding box of the described chair.
@@ -637,10 +716,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
@@ -668,25 +747,25 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/RoomSizeEstimation1.mp4"
+          :src="videoPackage['../assets/mp4/RoomSizeEstimation1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the size of this room (in square meters)? If multiple rooms
             are shown, estimate the size of the combined space.
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">10.5</div>
         </div>
       </div>
@@ -695,25 +774,25 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/RoomSizeEstimation2.mp4"
+          :src="videoPackage['../assets/mp4/RoomSizeEstimation2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the size of this room (in square meters)? If multiple rooms
             are shown, estimate the size of the combined space.
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">24.9</div>
         </div>
       </div>
@@ -722,25 +801,25 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/RoomSizeEstimation3.mp4"
+          :src="videoPackage['../assets/mp4/RoomSizeEstimation3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the size of this room (in square meters)? If multiple rooms
             are shown, estimate the size of the combined space.
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">14.0</div>
         </div>
       </div>
@@ -768,15 +847,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectAbsoluteDistance1.mp4"
+          :src="videoPackage['../assets/mp4/ObjectAbsoluteDistance1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Given a video of 199 frames, at frame 56, what is the direct
             distance between man wearing gray hoodie and black pants talking on
@@ -785,10 +864,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">8.0</div>
         </div>
       </div>
@@ -797,15 +876,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectAbsoluteDistance2.mp4"
+          :src="videoPackage['../assets/mp4/ObjectAbsoluteDistance2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Given a video of 198 frames, at frame 131, what is the direct
             distance between a boy wearing a blue shirt and black shorts in
@@ -815,10 +894,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">20.2</div>
         </div>
       </div>
@@ -827,25 +906,25 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectAbsoluteDistance3.mp4"
+          :src="videoPackage['../assets/mp4/ObjectAbsoluteDistance3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Measuring from the closest point of each object, what is the direct
             distance between the table and the monitor (in meters)?
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">1.3</div>
         </div>
       </div>
@@ -873,15 +952,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/SceneRecognition1.mp4"
+          :src="videoPackage['../assets/mp4/SceneRecognition1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which of the following descriptions of the scene in the video is the
             most accurate?
@@ -904,10 +983,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -916,15 +995,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/SceneRecognition2.mp4"
+          :src="videoPackage['../assets/mp4/SceneRecognition2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which of the following descriptions of the scene in the video is the
             most accurate?
@@ -948,10 +1027,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -960,15 +1039,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/SceneRecognition3.mp4"
+          :src="videoPackage['../assets/mp4/SceneRecognition3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which of the following descriptions of the scene in the video is the
             most accurate?
@@ -992,10 +1071,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -1023,24 +1102,24 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectCounting1.mp4"
+          :src="videoPackage['../assets/mp4/ObjectCounting1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             How many monitor(s) are in this video in total?
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">3</div>
         </div>
       </div>
@@ -1049,24 +1128,24 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectCounting2.mp4"
+          :src="videoPackage['../assets/mp4/ObjectCounting2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             How many table(s) are in this video in total?
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">2</div>
         </div>
       </div>
@@ -1075,24 +1154,24 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectCounting3.mp4"
+          :src="videoPackage['../assets/mp4/ObjectCounting3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             How many nightstand(s) are in this video in total?
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">2</div>
         </div>
       </div>
@@ -1120,15 +1199,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectRelativeDirection1.mp4"
+          :src="videoPackage['../assets/mp4/ObjectRelativeDirection1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Given a video of 199 frames, at frame 66, is the white suv in region
             (0.43,0.53,0.56,0.67)[Note: Bounding box region, coordinates are
@@ -1153,10 +1232,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
@@ -1165,15 +1244,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectRelativeDirection2.mp4"
+          :src="videoPackage['../assets/mp4/ObjectRelativeDirection2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             If I am standing by the clock and facing the bookshelf, is the
             counter to my front-left, front-right, back-left, or back-right?
@@ -1195,10 +1274,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
@@ -1207,15 +1286,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectRelativeDirection3.mp4"
+          :src="videoPackage['../assets/mp4/ObjectRelativeDirection3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             If I am standing by the door and facing the suitcase, is the basket
             to my front-left, front-right, back-left, or back-right? Directions
@@ -1237,10 +1316,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -1268,15 +1347,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectRelativeDistance1.mp4"
+          :src="videoPackage['../assets/mp4/ObjectRelativeDistance1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Given a video of 197 frames, at frame 101, measuring from the
             closest point of each object, which of those objects (a white sedan
@@ -1306,10 +1385,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -1318,15 +1397,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectRelativeDistance2.mp4"
+          :src="videoPackage['../assets/mp4/ObjectRelativeDistance2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Measuring from the closest point of each object, which of these
             objects (bookshelf, window, sofa, table) is the closest to the TV?
@@ -1346,10 +1425,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
@@ -1358,15 +1437,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ObjectRelativeDistance3.mp4"
+          :src="videoPackage['../assets/mp4/ObjectRelativeDistance3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Given a video of 197 frames, at frame 61, measuring from the closest
             point of each object, which of those objects (a white volkswagen
@@ -1386,10 +1465,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -1417,15 +1496,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/SpatialStateMemory1.mp4"
+          :src="videoPackage['../assets/mp4/SpatialStateMemory1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Before person touching anything at the beginning, which one is
             correct about relative positions from person’s view?
@@ -1448,10 +1527,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
@@ -1460,15 +1539,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/SpatialStateMemory2.mp4"
+          :src="videoPackage['../assets/mp4/SpatialStateMemory2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the first thing person touched with his left hand?
             <div class="optionContainer">
@@ -1486,10 +1565,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
@@ -1498,15 +1577,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/SpatialStateMemory3.mp4"
+          :src="videoPackage['../assets/mp4/SpatialStateMemory3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             How were the fried bull frogs arranged on the plate in the scene
             immediately after the city and name Pampanga was shown? Note: If not
@@ -1531,10 +1610,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -1562,15 +1641,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/AppearanceOrder1.mp4"
+          :src="videoPackage['../assets/mp4/AppearanceOrder1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What will be the first-time appearance order of the following
             categories in the video: microwave, towel, table, basket?
@@ -1589,10 +1668,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
@@ -1601,15 +1680,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/AppearanceOrder2.mp4"
+          :src="videoPackage['../assets/mp4/AppearanceOrder2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What will be the first-time appearance order of the following
             categories in the video: TV, pillow, mirror, table?
@@ -1628,10 +1707,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -1640,15 +1719,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/AppearanceOrder3.mp4"
+          :src="videoPackage['../assets/mp4/AppearanceOrder3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What will be the first-time appearance order of the following
             categories in the video: door, lamp, table, TV?
@@ -1668,10 +1747,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -1699,15 +1778,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ActionRecognition1.mp4"
+          :src="videoPackage['../assets/mp4/ActionRecognition1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             The video has 10633 frames at 30.0 FPS. What step is shown between
             frame 6683 and frame 8241?
@@ -1728,10 +1807,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">D</span></div>
         </div>
       </div>
@@ -1740,15 +1819,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ActionRecognition2.mp4"
+          :src="videoPackage['../assets/mp4/ActionRecognition2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             The video has 7346 frames at 30.0 FPS. What step is shown between
             frame 4495 and frame 5904?
@@ -1770,10 +1849,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -1782,15 +1861,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/ActionRecognition3.mp4"
+          :src="videoPackage['../assets/mp4/ActionRecognition3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which of the following is the correct temporal order of these steps?
 
@@ -1817,10 +1896,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">B</span></div>
         </div>
       </div>
@@ -1848,15 +1927,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/StateChangeUnderstanding1.mp4"
+          :src="videoPackage['../assets/mp4/StateChangeUnderstanding1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What happened to the person’s grey shirt?
 
@@ -1879,10 +1958,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">C</span></div>
         </div>
       </div>
@@ -1891,15 +1970,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/StateChangeUnderstanding2.mp4"
+          :src="videoPackage['../assets/mp4/StateChangeUnderstanding2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What happened to the broom?
 
@@ -1921,10 +2000,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -1933,15 +2012,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/StateChangeUnderstanding3.mp4"
+          :src="videoPackage['../assets/mp4/StateChangeUnderstanding3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             How many new boxes did the person put in the pantry?
 
@@ -1960,10 +2039,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer"><span class="option">A</span></div>
         </div>
       </div>
@@ -1991,15 +2070,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/RoutePlanning1.mp4"
+          :src="videoPackage['../assets/mp4/RoutePlanning1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             You are a robot beginning at livingroom1 facing the kitchen. You
             want to navigate to livingroom3. You will perform the following
@@ -2027,10 +2106,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">['A', 'B'] </span>
           </div>
@@ -2041,15 +2120,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/RoutePlanning2.mp4"
+          :src="videoPackage['../assets/mp4/RoutePlanning2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             You are a robot beginning at terrace1 facing the pool. You want to
             navigate to bedroom1. You will perform the following actions (Note:
@@ -2076,10 +2155,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option"> ['A', 'A']</span>
           </div>
@@ -2113,10 +2192,10 @@
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Based on the continuous images, in which direction is the camera
             moving?
@@ -2136,10 +2215,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">C</span>
           </div>
@@ -2153,10 +2232,10 @@
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             With the camera facing backward, in which direction is the white
             truck moving?
@@ -2176,10 +2255,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">C</span>
           </div>
@@ -2194,10 +2273,10 @@
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which direction is the toilet relative to me when I am taking image
             1?
@@ -2217,10 +2296,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">A</span>
           </div>
@@ -2250,15 +2329,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/Space-TimeCausalPrediction1.mp4"
+          :src="videoPackage['../assets/mp4/Space-TimeCausalPrediction1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the person going to do?
 
@@ -2281,10 +2360,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">C</span>
           </div>
@@ -2295,15 +2374,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/Space-TimeCausalPrediction2.mp4"
+          :src="videoPackage['../assets/mp4/Space-TimeCausalPrediction2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the person going to do?
             <div class="optionContainer">
@@ -2324,10 +2403,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">A </span>
           </div>
@@ -2338,15 +2417,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/Space-TimeCausalPrediction3.mp4"
+          :src="videoPackage['../assets/mp4/Space-TimeCausalPrediction3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             What is the person going to do?
 
@@ -2369,10 +2448,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">B</span>
           </div>
@@ -2402,15 +2481,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/DynamicPhysicalPrediction1.mp4"
+          :src="videoPackage['../assets/mp4/DynamicPhysicalPrediction1.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which option violates physical common sense the most in this video?
             <div class="optionContainer">
@@ -2432,10 +2511,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">A</span>
           </div>
@@ -2446,15 +2525,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/DynamicPhysicalPrediction2.mp4"
+          :src="videoPackage['../assets/mp4/DynamicPhysicalPrediction2.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which option violates physical common sense the most in this video?
             <div class="optionContainer">
@@ -2476,10 +2555,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">C </span>
           </div>
@@ -2490,15 +2569,15 @@
       <div class="videoPlayerContainer">
         <vue3videoplay
           class="videoPlayer"
-          src="src/assets/mp4/DynamicPhysicalPrediction3.mp4"
+          :src="videoPackage['../assets/mp4/DynamicPhysicalPrediction3.mp4']"
         />
       </div>
       <div class="qanda">
         <div class="q">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleBlue.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             Which option violates physical common sense the most in this video?
 
@@ -2521,10 +2600,10 @@
           </div>
         </div>
         <div class="a">
-          <div class="tinyTriContainer">
+          <!-- <div class="tinyTriContainer">
             <img class="qandaIcon" src="@/assets/icon/bubbleRed.png" alt="" />
             <div class="tinyTri"></div>
-          </div>
+          </div> -->
           <div class="textContainer">
             <span class="option">A</span>
           </div>
@@ -2537,6 +2616,12 @@
 <script setup>
 import circ from "../utils/circle.vue";
 import vue3videoplay from "../utils/vue3videoplay.vue";
+import "vue3-video-play/dist/style.css";
+const videoPackage = import.meta.glob("../assets/mp4/*.mp4", {
+  eager: true,
+  import: "default",
+});
+
 const scrollTo = (id) => {
   document.getElementById(id).scrollIntoView({
     behavior: "smooth",
@@ -2544,22 +2629,154 @@ const scrollTo = (id) => {
     inline: "nearest",
   });
 };
-
-import "vue3-video-play/dist/style.css";
-import { reactive } from "vue";
 </script>
 
 <style scoped>
 .contentsContainer {
   display: flex;
-  /* justify-content: center; */
+  flex-direction: column;
   align-items: center;
-  /* flex-direction: column; */
+  /* justify-content: center; */
+  padding: 5vmax;
+  font-family: "PH-medium";
+  width: 100%;
+  /* height: 80dvh; */
+
+  box-sizing: border-box;
+}
+
+.logoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.logoContainer img {
+  height: 10vmax;
+  aspect-ratio: 1;
+}
+.taskBtn {
+  display: flex;
+  width: 10vmax;
+  text-align: center;
+  line-height: 1.5;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0.75vmax;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #57088f;
+  margin-top: 20px;
+}
+
+.verticalLine {
+  display: flex;
+  height: 2.5vh;
+  width: 2px;
+  justify-self: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #b3b3b3;
+}
+
+.horizontalLine {
+  display: flex;
+  height: 2px;
+  width: 60%;
+  justify-self: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #b3b3b3;
+}
+.lineGroup {
+  display: flex;
+  width: 60%;
+  height: auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.lineGroup.second {
+  margin-top: -1vh;
+}
+.lineGroup.second .verticalLine {
+  height: 3.5vh;
+}
+
+.taskGroup {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 72%;
+  height: auto;
+  z-index: 1;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+}
+.taskGroup .taskBtnContainer {
+  display: flex;
+  width: 100%;
+  /* height: 100%; */
+  justify-content: center;
+}
+
+.taskGroup .taskBtn {
+  justify-content: center;
+  width: 8vmax;
+  background: #363636;
+  margin-top: 0;
+}
+
+.subTaskGroup {
+  margin-top: 0.25vmax;
+}
+
+.subTaskBtnGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  align-items: center;
+  width: 9vmax;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 1vmax 0.5vmax;
+  border: #b3b3b3 2px dashed;
+}
+
+.subTaskGroup .taskBtn {
+  width: 8vmax;
+  background-color: #80b9fa;
+  margin-top: 0;
+}
+
+.taskBtn {
+  box-shadow: #00000066 2px 4px 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.taskGroup .taskBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: #00000066 2px 7px 12px;
+  background-color: #474747;
+  cursor: pointer;
+}
+
+.subTaskGroup .taskBtn:hover {
+  background-color: #83cdff;
+  cursor: pointer;
+}
+
+/* .contentsContainer {
+  display: flex;
+
+  align-items: center;
+
   padding: 5vmax;
 
   width: 100%;
   height: 80dvh;
-  /* height: 100vh; */
+
   box-sizing: border-box;
 }
 .circleContainer {
@@ -2645,7 +2862,7 @@ import { reactive } from "vue";
   border-radius: 20px;
   border: #209cee solid 2px;
   padding: 0.5vmax 1vmax;
-  /* margin: 0.5vmax; */
+
   font-size: 0.8vmax;
   cursor: pointer;
   box-shadow: 2px 4px 2px #83cdff;
@@ -2668,21 +2885,23 @@ import { reactive } from "vue";
 }
 .subTaskGroup {
   display: flex;
-  height: 100%;
+  height: 80%;
   align-items: center;
+  justify-content: center;
   gap: 30px;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; */
-}
+  border: #209cee 2.5px dashed;
+  border-radius: 12px;
+} */
 
 .subTaskBlockContainer {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
   box-sizing: border-box;
-  padding: 5% 15%;
-  column-gap: 30px;
+  padding: 5% 0;
+  padding-left: 10%;
+  padding-right: 15%;
+  column-gap: 1.5%;
 }
 .taskIntro {
   display: flex;
@@ -2711,7 +2930,7 @@ import { reactive } from "vue";
   font-family: "PH-heavy";
   font-size: 16px;
   line-height: 1.5;
-  background-color: #000000;
+  background-color: #363636;
 }
 
 .mainTaskTitle {
@@ -2738,13 +2957,13 @@ import { reactive } from "vue";
   display: flex;
   width: fit-content;
   /* margin: 10px 0; */
-  color: #ffffffcc;
+  color: #ffffff;
   margin-bottom: 10px;
   padding: 2.5px 10px;
   font-family: "PH-heavy";
   font-size: 16px;
   line-height: 1.5;
-  background-color: #9ccaff;
+  background-color: #80b9fa;
 }
 .subTaskTitle {
   font-family: "PH-heavy";
@@ -2779,12 +2998,16 @@ import { reactive } from "vue";
 .imgGroupContainer {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 600px;
+  width: 100%;
+  aspect-ratio: 320/600;
+  /* height: 600px; */
 }
 .imgGroupContainer img {
-  width: 320px;
-  height: 180px;
+  width: 100%;
+  min-width: 280px;
+
+  aspect-ratio: 320/180;
+  /* height: 180px; */
   border-radius: 12px;
   margin-bottom: 20px;
   box-shadow: 2px 4px 4px #0000007f;
@@ -2792,8 +3015,10 @@ import { reactive } from "vue";
 
 .videoPlayerContainer {
   display: flex;
-  width: 320px;
-  height: 180px;
+  width: 100%;
+  min-width: 280px;
+  /* min-width: px; */
+  aspect-ratio: 16/9;
   /* width: fit-content;
   height: fit-content; */
   border-radius: 12px;
@@ -2950,20 +3175,21 @@ video {
 .q,
 .a {
   display: grid;
+  /* position: relative; */
   box-sizing: border-box;
   height: fit-content;
   /* height: 100%; */
 }
 
 .a {
-  grid-template-columns: 50px 1fr 0px;
+  /* grid-template-columns: 50px 1fr 0px; */
   direction: rtl;
   flex-grow: 1;
   align-items: flex-end;
 }
 
 .q {
-  grid-template-columns: 50px 1fr 0px;
+  /* grid-template-columns: 50px 1fr 0px; */
 }
 
 .tinyTriContainer {
@@ -3010,12 +3236,14 @@ video {
 
 .textContainer {
   display: flex;
+  position: relative;
   flex-direction: column;
   box-sizing: border-box;
-  width: fit-content;
+  width: 100%;
   direction: ltr;
   /* width: 100%; */
   /* height: 100%; */
+  overflow: hidden;
   height: fit-content;
   border-radius: 10px;
   padding: 0.75vmax 1.5vmax;
@@ -3038,5 +3266,38 @@ video {
 .a .textContainer {
   background-color: #ffffff;
   justify-content: center;
+  align-items: center;
+  min-height: 70px;
+}
+.textContainer > * {
+  z-index: 1;
+}
+.textContainer::before {
+  display: flex;
+  position: absolute;
+  /* background-color: violet; */
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+
+  /* justify-content: center;
+  align-items: center; */
+  font-family: "PH-bold";
+  font-size: 250px;
+  z-index: 0;
+  user-select: none; /* 防止用户选中水印文字 */
+  pointer-events: none; /* 防止水印干扰交互 */
+}
+.q .textContainer::before {
+  content: "Q";
+  transform: translate(-50px, -180px);
+  color: #ffffff40;
+}
+
+.a .textContainer::before {
+  content: "A";
+  transform: translate(150px, -170px);
+  color: #f47c7c90;
 }
 </style>

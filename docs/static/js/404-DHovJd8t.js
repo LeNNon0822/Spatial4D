@@ -1,0 +1,1 @@
+import{_ as o}from"./index-DdF1Pxos.js";import{g as s,j as t}from"./@vue-Chn2TrK5.js";import"./vue-router-BU3y1Pi3.js";import"./vue3-video-play-ByrcjfUW.js";import"./lenis-D74GLXXG.js";import"./gsap-D6wvMD7i.js";const r={class:"font-404"};const e=o({},[["render",function(o,e){return t(),s("div",r,"404 Not Found")}],["__scopeId","data-v-5a5c8b7d"]]);export{e as default};
